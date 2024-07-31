@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cafe Star's</title>
+    <style type="text/css">
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+       
+        #scroll-btn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: chocolate;
+          color: white;
+          cursor: pointer;
+          padding: 15px 19px;
+          border-radius: 100px;
+        }
+       
+        #scroll-btn:hover {
+          background-color: #555;
+        }
+       
+        .sampel {
+          min-height: 2000px;
+        }
+      </style>
+      </head>
+      <body>
+       
+      <button onclick="topFunction()" id="scroll-btn" title="Top">&uarr;</button>
+       
+       
+      <script>
+      // ketika pengunjung scroll kebawah 20px dari atas dokumen, maka tampilkan tombol scroll-btn
+      window.onscroll = function() {scrollFunction()};
+       
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scroll-btn").style.display = "block";
+        } else {
+          document.getElementById("scroll-btn").style.display = "none";
+        }
+      }
+       
+      // ketika tombol tersebut di klik, maka lakukan scroll keatas laman
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+        <a href="#">Cafe <span>Star's</span></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Best Menu</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="/formulir/Formulir cafe/about me.html">About</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="/formulir/Formulir cafe/img/login.html">Logout</a></li>
+                    <a href="beranda.html" target="_blank" title="Click">Join Member</a>
+                    
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Cafe Star's </h2>
+        <p>Would you like to start with menu star's?</p>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <h3>Best Seller</h3>
+            <h4>Cafe Star's menu</h4>
+        </div>
+        <div class="menu-content">
+            <div class="hot-coffees">
+                <div class="hot-coffees-image">
+                    <img src="hot-coffees.jpg" alt="">
+                </div>
+                <div class="hot-coffees-body">
+                    <h2><a href="hot coffees.html" target="_blank" title="Click">Hot coffees</a></h2>
+                    <label>Hot Coffees adalah minuman yang Terbuat dari espresso, cokelat, steamed milk, dan foam. Minuman ini termasuk perpaduan unik kopi dengan cokelat panas.</label>
+                </div>
+            </div>
+                <div class="cold-coffees">
+                    <div class="cold-coffees-image">
+                        <img src="cold-coffees.jpg" alt="">
+                    </div>
+                    <div class="cold-coffees-body">
+                        <h2><a href="cold coffees 2.html" target="_blank" title="Click">Cold Coffees</a></h2>
+                        <label>Cold coffees terbuat dari kopi giling yang dicampur dengan air dingin atau air suhu ruangan.</label>
+                    </div>
+                </div>
+                <div class="frappucino-coffees">
+                    <div class="frappucino-coffees-image">
+                        <a href="frappuccino.html">
+                            <img src="frappuccino.jpg" alt="">
+                    </div>
+                    <div class="frappucino-coffees-body">
+                        <h2>Frappuccino </h2>
+                        <label>Frappuccino adalah Minuman yang terdiri dari kopi diblender dengan es dan bahan-bahan lainnya, biasanya ditambah krim kocok..</label>
+                    </div>
+                </div>
+                <div class="frappucino-coffees">
+                    <div class="frappucino-coffees-image">
+                        <a href="caramel.html">
+                            <img src="CARAMEL FRAPPÉ.jpg" alt="">
+                    </div>
+                    <div class="frappucino-coffees-body">
+                        <h2>Caramel macchiato</h2>
+                        <label>caramel-macchiatoadalah minumqan perpaduan yang menggabungkan antara caramel dan susu yang bisa membuat mood mu terasa menyenangkann.</label>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="shop" id="shop">
+        <div class="shop-header">
+            <h3>Shop</h3>
+            <h4>Menu Star Drinks</h4>
+        </div>
+        <div class="shop-box">
+            <div class="item-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="jus apel.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">Rp22.000</label>
+                        <h3>Juice Apple</h3>
+                        <label>Juice Apel adalah jus yang terbuat dari buah apel, 
+                            dengan buah yang fresh. </label>
+                    </div>
+                </div>           
+             </div>
+             <div class="item-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="jus stroberi.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp30.000</label>
+                        <h3>Juice Strawberry</h3>
+                        <label>Juice Strawberry adalah jus yang dibuat dari buah Stroberi dengan 
+                            pilihan yag terbaik untuk kesehatan. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="jus jeruk.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">Rp25.000</label>
+                        <h3>Juice Orange</h3>
+                        <label>Juice Orange adalah jus yang terbuat dari buah jeruk 
+                            kaya akan Vit C. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="jus mangga.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp28.500</label>
+                        <h3>Juice Manggo</h3>
+                        <label>Juice Manggo adalah jus yang terbuat dari buah mangga dengan 
+                            cita rasa yang fresh dan manis. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="chocolate-frappuccino.png">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">Rp35.000</label>
+                        <h3>Chocolate latte</h3>
+                        <label>Minuman ini terdiri dari kopi diblender dengan es dan bahan-bahan lainnya, biasanya ditambah krim kocok. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="milktea.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp33.500</label>
+                        <h3>Milktea</h3>
+                        <label>minuman yang merupakan campuran dari teh dan susu dalam komposisi tertentu. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="thatea.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">Rp.31.500</label>
+                        <h3>Thaitea</h3>
+                        <label>minuman yang terbuat dari campuran teh hitam, adas manis, kapulaga, gula, bunga jeruk, dan susu. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ice-latte.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp32.800</label>
+                        <h3>Ice-Mocha</h3>
+                        <label>satu atau dua shot espresso yang dikombinasikan dengan perasa cokelat kemudian ditambahkan dengan susu atau krim </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="beef steak.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp65.800</label>
+                        <h3>Beef steak</h3>
+                        <label>daging sapi yang diolah dengan cara dipanggang. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="burger.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp.48.000</label>
+                        <h3>Burger</h3>
+                        <label>sejenis roti berbentuk bundar yang diiris dua, dan di tengahnya diisi dengan patty yang biasanya diambil dari daging, kemudian sayur-sayuran berupa selada, tomat dan bawang bombai. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="fried chicken.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp47.000</label>
+                        <h3>Fried chicken</h3>
+                        <label>ayam goreng siap saji yang dibuat dari potongan daging ayam yang dilapisi tepung yang telah diberi bumbu sebelum dimasak </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="pizza.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp78.000</label>
+                        <h3>Pizza</h3>
+                        <label>hidangan gurih asal Italia sejenis adonan bundar dan pipih, yang dipanggang di oven dan biasanya dilumuri saus tomat serta keju </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="potato.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp25.000</label>
+                        <h3>French fries</h3>
+                        <label>hidangan yang dibuat dari potongan-potongan kentang yang digoreng dalam minyak goreng panas. </label>
+
+                    </div>
+                </div>           
+             </div>
+             <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="spaghettii.avif">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">Rp30.000</label>
+                        <h3>Spaghetti</h3>
+                        <label>salah satu varian pasta yang memiliki bentuk silinder tipis dan padat, dengan tabahan bumbu cita rasa yang nikmat. </label>
+
+                    </div>
+                </div>           
+             </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="contact-box">
+            <div class="contact-image">
+                <img src="star.jpg">
+            </div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-body">
+                <form>
+                    <h2>Contact Us</h2>
+                    <div class="form-content">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" required>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ourstarcafe?igsh=OWl3czVlbXM5Yjho"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://youtube.com/@user-jp1eu6vh1c?si=2Czh-1VW8X5XGsG5"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <label>Cafe Star's &copy; 1999</label>
+            </div>
+            <div class="brand">
+                <label>Cafe <span>Star's</span></label>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
